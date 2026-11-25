@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="400" height="400" fill="none" stroke="#000" stroke-width="7">
+  <!-- Atomic planes of a cubic lattice, edge-on. An extra half-plane from above and an opposite-signed one
+       from below lock against each other across the slip plane: the jam that makes worked metal harder. -->
+<path d="M10 0V100"/>
+<path d="M22 0V36C22 50.0 25 50.0 25 64V100"/>
+<path d="M46 0V36C46 50.0 40 50.0 40 64V100"/>
+<path d="M60 0V36C60 50.0 66 50.0 66 64V100"/>
+<path d="M75 0V36C75 50.0 78 50.0 78 64V100"/>
+<path d="M90 0V100"/>
+<path d="M34 0V47"/>
+<path d="M54 100V53"/>
+</svg>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Work Hard Tool Company</title>
+<meta name="description" content="Work Hard Tool Company: CNC machined parts, from one-off prototypes to small batches.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:#000;font:16px/1.45 "Helvetica Neue",Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,"SF Mono",Menlo,monospace}
+a{color:#000}
+.sheet{max-width:960px;margin:40px auto;border:3px solid #000}
+header{display:grid;grid-template-columns:120px 1fr auto;border-bottom:3px solid #000}
+header .logo{border-right:3px solid #000;padding:16px}
+header .logo img{display:block;width:100%;height:auto}
+header .name{padding:16px 20px;align-self:end}
+header .name b{display:block;font-weight:800;font-size:clamp(28px,5vw,44px);line-height:.95;letter-spacing:-.02em;text-transform:uppercase}
+header .name small{display:block;font-size:12px;margin-top:10px;text-transform:uppercase;letter-spacing:.08em}
+header nav{border-left:3px solid #000;display:flex;flex-direction:column}
+header nav a{flex:1;display:flex;align-items:center;padding:0 20px;border-bottom:1px solid #000;text-decoration:none;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+header nav a:last-child{border-bottom:0}
+header nav a:hover,.cta:hover{background:#000;color:#fff}
+.lbl{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+section{border-bottom:3px solid #000}
+.lead{padding:28px 20px;font-size:clamp(20px,3vw,28px);line-height:1.2;font-weight:700;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.grid > div{padding:16px 20px;border-right:1px solid #000}
+.grid > div:last-child{border-right:0}
+.grid.two{grid-template-columns:1fr 1fr}
+h2{font-size:11px;font-weight:400;text-transform:uppercase;letter-spacing:.1em;padding:10px 20px;border-bottom:3px solid #000}
+table{width:100%;border-collapse:collapse}
+td{padding:12px 20px;border-bottom:1px solid #000;vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.n{width:64px;border-right:1px solid #000;text-align:right}
+td small{display:block;font-size:13px;margin-top:3px}
+.cta{display:block;padding:20px;font-size:clamp(20px,4vw,32px);font-weight:800;text-transform:uppercase;letter-spacing:-.01em;text-decoration:none;word-break:break-word}
+footer{padding:10px 20px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;display:flex;justify-content:space-between;gap:20px}
+@media (max-width:700px){
+  .sheet{margin:16px}
+  header{grid-template-columns:80px 1fr}
+  header nav{grid-column:1/-1;border-left:0;border-top:3px solid #000;flex-direction:row}
+  header nav a{padding:12px;border-bottom:0;border-right:1px solid #000;justify-content:center}
+  header nav a:last-child{border-right:0}
+  .grid,.grid.two{grid-template-columns:1fr}
+  .grid > div{border-right:0;border-bottom:1px solid #000}
+  .grid > div:last-child{border-bottom:0}
+  footer{flex-direction:column;gap:4px}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="logo"><img src="logo.svg" alt="Work Hard Tool Company logo"></div>
+    <div class="name"><b>Work Hard Tool Company</b><small>Machined parts / CNC</small></div>
+    <nav aria-label="Sections"><a href="#work">Work</a><a href="#quote">Quote</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="lead">CNC machined parts, from a single prototype to a small batch. Send a model, get a price.</section>
+
+  <section id="work">
+    <h2>What we make</h2>
+    <div class="grid">
+      <div><span class="lbl">Prototypes</span>One-off parts to check fit and function before you commit to a run.</div>
+      <div><span class="lbl">Small batches</span>Setup is spread over the batch, so the unit price drops as quantity goes up.</div>
+      <div><span class="lbl">Fixtures &amp; tooling</span>Jigs, plates and brackets for your own shop floor.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Defaults</h2>
+    <div class="grid">
+      <div><span class="lbl">Material</span><span class="mono">6061-T6 Aluminum</span></div>
+      <div><span class="lbl">Tolerance</span><span class="mono">ISO 2768-m</span></div>
+      <div><span class="lbl">Lead time</span><span class="mono">10 business days</span></div>
+    </div>
+  </section>
+
+  <section id="quote">
+    <h2>How a quote works</h2>
+    <table>
+      <tr><td class="n mono">01</td><td><b>Send the CAD</b><small>STEP, IGES or STL, with quantity, material, finish and tolerance.</small></td></tr>
+      <tr><td class="n mono">02</td><td><b>Get a quote</b><small>Priced from setup and programming, machine time, material and finishing. No guesswork.</small></td></tr>
+      <tr><td class="n mono">03</td><td><b>Parts ship</b><small>Invoice on delivery, Net 30.</small></td></tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- TODO: put the real address here, in both places -->
+    <a class="cta" href="mailto:hello@example.com">hello@example.com</a>
+  </section>
+
+  <footer><span>Work Hard Tool Company</span><span>Thank you.</span></footer>
+</div>
+</body>
+</html>
